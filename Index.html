@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Formulário</title>
+        <link rel="stylesheet" href="estilo.css">
+        <script src="script.js"></script>
+    </head>
+    <body style="background-color: grey;">
+        <div id="caixaForm">
+            <h2>Formulário de Inscrição</h2>
+            <form id="form">
+                <div class="container">
+                    <div class="label">Nome:</div>
+                    <input id="nome" placeholder="Fulano De Tal" autofocus></input>
+                    <p id="nomeInvalido" class="msgErro" hidden="0">Nome inválido.</p>
+                </div>
+                <div class="container">
+                    <div class="label">E-mail:</div>
+                    <input id="email" placeholder="email@dominio.com"></input>
+                    <p id="emailInvalido" class="msgErro" hidden="0">E-mail inválido.</p>
+                </div>
+                <div class="container">
+                    <div class="label">Telefone:</div>
+                    <input id="tel" placeholder="(00)00000-0000"></input>
+                    <p id="telInvalido" class="msgErro" hidden="0">Telefone inválido.</p>
+                </div>
+                <div class="container">
+                    <div class="label">CPF:</div>
+                    <input id="cpf" placeholder="000.000.000-00"></input>
+                    <p id="cpfInvalido" class="msgErro" hidden="0">CPF inválido.</p>
+                </div>
+            </form>
+            <div class="container">
+                <button onclick="puxarValores();">Enviar</button><button onclick="limparForm();">Limpar</button>
+                <p style="color: red;" id="msgvazio" hidden="0">Um ou mais campos não foram preenchidos!</p>
+                <p style="color: greenyellow;" id="msgSucesso" hidden="0">Formulário enviado!</p>
+            </div>
+        </div>
+    </body>
+</html>
